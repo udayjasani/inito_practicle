@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/slick.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container d-flex justify-content-between">
+            <div class="logo_sec d-flex align-items-center">
+                <div class="hamburder_menu" onclick="hamburger()">
+                    <img src="./images/header/hamburger.png" alt="hamburger" class="object-fit-contain">
+                </div>
+                <img src="./images/header/Logo Inito.png" alt="Inito logo" class="object-fit-contain">
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="d-flex align-items-center mb-0 ms-0">
+                    <li class="close_menu  pb-0 pt-2"><a href="javascript:void(0);" class="fs-3 fw-semibold" onclick="hamburger()"><img
+                                src="./images/header/close.svg" alt="close"></a></li>
+                    <li><a href="javascript:void(0);" class="fs-6 fw-semibold"> About Us</a></li>
+                    <li><a href="javascript:void(0);" class="fs-6 fw-semibold"> Blog</a></li>
+                    <li><a href="javascript:void(0);" class="fs-6 fw-semibold"> FAQ</a></li>
+                    <li><a href="javascript:void(0);" class="fs-6 fw-semibold"> Contact Us</a></li>
+                    <li class="try_inito_button"><a href="javascript:void(0);" class=" fw-semibold"> <button
+                                class="btn rounded-pill fw-semibold try_inito">Try
+                                Inito</button></a></li>
+                </ul>
+            </div>
+            <div class="try_inito_sec">
+                <a href="javascript:void(0);" class=" fw-semibold"> <button class="btn rounded-pill fw-semibold try_inito">Try
+                        Inito</button></a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner -->
+    <section class="banner_sec position-relative">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="banner_text">
+                        <p class="mb-0 d-flex fw-semibold align-items-center star_text ">
+                            <span class="d-flex pe-3"> <img src="./images/banner/star.png" alt="star"
+                                    class="object-fit-contain star">
+                                <img src="./images/banner/star.png" alt="star" class="object-fit-contain star">
+                                <img src="./images/banner/star.png" alt="star" class="object-fit-contain star">
+                                <img src="./images/banner/star.png" alt="star" class="object-fit-contain star">
+                                <img src="./images/banner/star.png" alt="star" class="object-fit-contain star"></span>
+                            TRUSTED BY 20,000+ COUPLES
+                        </p>
+                        <h1 class="mb-0 fw-bold pt-3">
+                            Track your fertility hormones at home, in 10 minutes
+                        </h1>
+                        <p class="pt-4 fw-medium fs-6 accurate mb-0">
+                            Get accurate results of <span class="fw-bold">Estrogen, LH,
+                                Progesterone metabolite PdG and FSH</span> with Inito,
+                            the all-in-one, FDA-registered fertility monitor.
+                        </p>
+                        <div class="button_section banner_button">
+                            <a href="javascript:void(0);">
+                                <button class="btn rounded-pill fw-semibold try_inito regular_button fs-6">How does
+                                    Inito
+                                    work?</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class=" banner_img_sec position-relative">
+                        <div class="banner_img_section">
+                            <img src="./images/banner/banner_img.png" alt="banner-image"
+                                class="object-fit-contain w-100 d-block">
+                        </div>
+                        <div class="mobile_img_sec">
+                            <img src="./images/banner/mobile_banner_img.png" alt="mobile-banner-image"
+                                class="object-fit-contain w-100 d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="button_section_mobile text-center position-relative">
+        <a href="javascript:void(0);">
+            <button class="btn rounded-pill fw-semibold try_inito regular_button fs-6">How does Inito work?</button>
+        </a>
+    </div>
+    <!-- banner end -->
+
+    <!-- logos -->
+    <section class="logos_section">
+        <h2 class="text-center logos_text fw-bold mb-0">AS SEEN ON</h2>
+        <div class="container">
+            <div class=" d-flex flex-wrap justify-content-between logos_sec">
+                <img src="./images/logos/logo1.png" alt="bloomberg" class="logo_img logo_1 d-block object-fit-contain">
+                <img src="./images/logos/logo2.png" alt="forbes" class="logo_img logo_2 d-block object-fit-contain">
+                <img src="./images/logos/logo3.png" alt="the week" class="logo_img logo_3 d-block object-fit-contain">
+                <img src="./images/logos/logo4.png" alt="4 washington" class="logo_img logo_4 d-block object-fit-contain">
+                <img src="./images/logos/logo5.png" alt="enterpreneur" class="logo_img logo_5 d-block object-fit-contain">
+            </div>
+        </div>
+    </section>
+    <!-- logos end-->
+
+    <!-- fertility -->
+    <section class="fertility">
+        <div class="container">
+            <h2 class="heading fw-bold text-center mx-auto d-block mb-0">
+                The <span class="border_line position-relative">only</span> fertility kit you will ever need
+            </h2>
+            <p class="ovulation_text text-center fw-medium d-block mx-auto mb-0">
+                Most ovulation tests predict your fertile days by tracking Estrogen
+                and Luteinizing Hormone (LH), but fail to measure the hormone that
+                actually confirms your ovulation and supports pregnancy: <span class="fw-bold">Progesterone.</span>
+            </p>
+            <h3 class="heading2 fw-bold text-center mx-auto d-block mb-0">
+                What makes Inito different?
+            </h3>
+            <p class="ovulation_text text-center fw-medium d-block mx-auto mb-0 pb-0 ovulation_text2">
+                Inito is the only fertility monitor that measures all <span class="fw-bold">4 hormones</span> on a
+                <span class="fw-bold">single test strip</span>,
+                showing you a full picture of your cycles with results unique to your body.
+            </p>
+            <div class="icons_section d-block mx-auto text-center">
+                <div class="icon_sec">
+                    <img src="./images/fertility/trusted-couples.png" alt="trusted-couples">
+                    <p class="shipping_text fw-semibold text-center mx-auto d-block mb-0">TRUSTED BY 20,000+ COUPLES
+                    </p>
+                </div>
+                <div class="icon_sec">
+                    <img src="./images/fertility/shipping.png" alt="shipping">
+                    <p class="shipping_text fw-semibold text-center mx-auto d-block mb-0">FREE US SHIPPING</p>
+                </div>
+                <div class="icon_sec">
+                    <img src="./images/fertility/registered.png" alt="registered">
+                    <p class="shipping_text fw-semibold text-center mx-auto d-block mb-0">HSA/FSA ELIGIBLE </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fertility end -->
+
+    <!-- predict -->
+    <section class="predict_sec predict_sec1">
+        <div class="container ">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-5">
+                    <div class="predict_mobile_bg text-center mx-auto ">
+                        <div class="imgSlider">
+                            <div class="text-center mx-auto d-block"><img src="./images/predict/iPhone12.png"
+                                    alt="Image 1" class="iPhone12_img w-100 d-block mx-auto"></div>
+                            <div class="text-center mx-auto d-block"><img src="./images/predict/iPhone12_3.png"
+                                    alt="Image 3" class="iPhone12_img w-100 d-block mx-auto"></div>
+                            <div class="text-center mx-auto d-block"><img src="./images/predict/iPhone12_2.png"
+                                    alt="Image 2" class="iPhone12_img w-100 d-block mx-auto"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="predict_text ">
+                        <h2 class="predict_heading fw-bold mb-0 d-block text-start">
+                            Predict and confirm your ovulation with <span
+                                class="border_line position-relative">actual</span>
+                            data
+                        </h2>
+                        <p class="fw-medium">
+                            Unlike most ovulation tests that only give you "yes/no" results, Inito provides <span
+                                class="fw-bold">
+                                real
+                                numerical values
+                            </span> of your fertility hormones.
+                        </p>
+                        <p class=" fw-medium">
+                            If you have irregular cycles, actual data is necessary to know exactly when you ovulate, and
+                            when is the best time to try to conceive.
+                        </p>
+                        <div class="try_inito_sec">
+                            <a href="javascript:void(0);" class=" fw-semibold"> <button class="btn rounded-pill fw-semibold try_inito">Get
+                                    the Inito Kit
+                                </button></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="predict_sec predict_sec2">
+        <div class="container ">
+            <div class="bottom_section">
+                <div class="row ">
+                    <div class="col-md-5">
+                        <h2 class="predict_heading fw-bold mb-0 d-block text-start">
+                            Never miss <span class="egg_line"> a day</span> again with Inito
+                        </h2>
+                        <p class="fw-medium inito_text">
+                            Inito tracks up to 6 fertile days and confirms ovulation by measuring all 4 hormones in just
+                            10 minutes:
+                        </p>
+                        <ul class="ms-0 mb-0 ps-0">
+                            <li class="d-flex align-items-center">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.68272 19L6.56374 18.8026C4.80878 15.8119 0.11898 9.46546 0.0694051 9.39636L0 9.30753L1.59632 7.73818L6.65297 11.2519C9.05241 8.12312 11.7592 5.24104 14.7436 2.66494C15.8442 1.69766 17.0241 0.819221 18.2535 0.0197403L18.2833 0H20.9901L20.7323 0.227013C14.0892 6.12935 6.87111 18.6743 6.79178 18.8026L6.68272 19Z"
+                                        fill="#499972" />
+                                </svg>
+                                <span class="fw-medium">Estrogen, which rises 3-4 days before ovulation</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_1898)">
+                                        <path
+                                            d="M6.74 19.25L6.62 19.05C4.85 16.02 0.12 9.59 0.07 9.52L0 9.43L1.61 7.84L6.71 11.4C9.13 8.23 11.86 5.31 14.87 2.7C15.98 1.72 17.17 0.83 18.41 0.02L18.44 0H21.17L20.91 0.23C14.21 6.21 6.93 18.92 6.85 19.05L6.74 19.25Z"
+                                            fill="#A56FDE" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_1898">
+                                            <rect width="21.18" height="19.25" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="fw-medium">LH, which surges 24-36 hours before ovulation </span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.74 19.25L6.62 19.05C4.85 16.02 0.12 9.59 0.07 9.52L0 9.43L1.61 7.84L6.71 11.4C9.13 8.23 11.86 5.31 14.87 2.7C15.98 1.72 17.17 0.83 18.41 0.02L18.44 0H21.17L20.91 0.23C14.21 6.21 6.93 18.92 6.85 19.05L6.74 19.25Z"
+                                        fill="#5A8EE7" />
+                                </svg>
+                                <span class="fw-medium">PdG, which rises after ovulation </span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_1908)">
+                                        <path
+                                            d="M6.74 19.25L6.62 19.05C4.85 16.02 0.12 9.59 0.07 9.52L0 9.43L1.61 7.84L6.71 11.4C9.13 8.23 11.86 5.31 14.87 2.7C15.98 1.72 17.17 0.83 18.41 0.02L18.44 0H21.17L20.91 0.23C14.21 6.21 6.93 18.92 6.85 19.05L6.74 19.25Z"
+                                            fill="#E7956D" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_1908">
+                                            <rect width="21.18" height="19.25" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <span class="fw-medium">FSH, to track follicle growth</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="./images/predict/graph.png" alt="graph" class="w-100 d-block object-fit-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- predict end -->
+
+    <!-- smarter -->
+    <section class="smarter_section">
+        <div class="smarter_part_1 mx-auto position-relative">
+            <div class="container">
+                <div class="calender_section position-relative">
+                    <div class="calender_sec position-absolute">
+                        <img src="./images/smarter/calender.png" alt="calender" class="object-fit-contain calender_img">
+                    </div>
+                    <div class="calender_write">
+                        <h2 class="fw-bold mb-0 MEASURE">WHY MEASURE PROGESTERONE?</h2>
+                        <p class="fw-medium">
+                            <span class="fw-bold">Anovulation</span> (having a menstrual cycle with no egg) is actually
+                            a common occurrence,
+                            affecting 1 in 10 women*.
+                        </p>
+                        <p class="fw-medium">
+                            A sure way to confirm ovulation is a <span class="fw-bold">rise in Progesterone level</span>
+                            after peak fertility.
+                            Progesterone also supports implantation and elevated levels of PdG during the 7-10 day
+                            window after ovulation correlates to higher chances of a successful pregnancy.
+                        </p>
+                        <p class="source fw-medium">
+                            * Source: National Institutes of Health
+                        </p>
+                        <h3 class="fw-bold">
+                            “Inito is all that you need to give you the best chance of conception."
+                        </h3>
+                        <div class="d-flex align-items-center">
+                            <div><img src="./images/smarter/profile_pic.png" alt="profile pic"></div>
+                            <div class="profile_sec">
+                                <p class="fw-bold profile_title ">Dr. Rachel Wagner</p>
+                                <p class=" profile_text fw-medium mb-0">MD</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="smarter_2">
+            <h2 class="fw-bold text-center mx-auto why_inito">
+                Why Inito is the smarter
+                way to get <span class="border_line position-relative">pregnant</span>
+            </h2>
+            <div class="adapts_part">
+                <div class="adapts_section">
+                    <div class="row">
+                        <div class="col-12 col-md-6 adapts_write">
+                            <h2 class="fw-bold">
+                                Adapts to your
+                                <span class="ir">ir</span>regular cycle
+                            </h2>
+                            <p class="fw-medium">Most ovulation kits have a set value or a threshold,
+                                making them likely to give a false read if your hormones
+                                fall outside the average range.</p>
+                            <p class="fw-medium mb-0 Every">Every woman is unique, especially with a condition like PCOS
+                                or
+                                Thyroid which can
+                                influence hormone levels. Inito measures real values of your hormones to
+                                personalize results to the unique you.</p>
+                        </div>
+                        <div class="col-12 col-md-6 adapts_img">
+                            <div class="img_sec">
+                                <img src="./images/smarter/lady.png" alt="lady" class="w-100 h-100 object-fit-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tracks_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex tracks_img_sec">
+                        <div class="img_sec position-relative mt-auto ">
+                            <img src="./images/tracks/iphone12.jpg" alt="iphone 12" class="w-100 object-fit-contain">
+                            <div class="high_fertility position-absolute">
+                                <div class="high_slider">
+                                    <div><img src="./images/tracks/slider_1.png" alt="slider 1" class="w-100 "></div>
+                                    <div><img src="./images/tracks/slider_2.png" alt="slider 2" class="w-100 "></div>
+                                    <div><img src="./images/tracks/slider_3.png" alt="slider 3" class="w-100 "></div>
+                                    <div><img src="./images/tracks/slider_4.png" alt="slider 4" class="w-100 "></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="track_write">
+                            <h2 class="fw-bold">
+                                Inito tracks everything
+                                so you don’t have to
+                            </h2>
+                            <p class="fw-medium">
+                                The Inito Fertility Monitor comes with a free easy-to-use App, so you can track your
+                                fertile days with ease and know exactly when you ovulate.
+                            </p>
+                            <p class="fw-medium ourApp">
+                                Our App notifies you for everything:
+                            </p>
+                            <ul class="mb-0 ps-0">
+                                <li class="fw-medium d-flex">
+                                    <div class="dot"></div>
+                                    <p> Your fertility levels </p>
+                                </li>
+                                <li class="fw-medium d-flex">
+                                    <div class="dot"></div>
+                                    <p> When to test on the right days</p>
+                                </li>
+                                <li class="fw-medium d-flex">
+                                    <div class="dot"></div>
+                                    <p> When you’ve successfully ovulated</p>
+                                </li>
+                                <li class="fw-medium d-flex">
+                                    <div class="dot"></div>
+                                    <p> And when to roll into bed</p>
+                                </li>
+                            </ul>
+                            <div class="try_inito_sec">
+                                <a href="javascript:void(0);" class=" fw-semibold"> <button
+                                        class="btn rounded-pill fw-semibold try_inito">Get the Inito Kit</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hormone_sec">
+            <div class="hormone_part">
+                <div class="row">
+                    <div class="col-12 col-md-6 hormone_write">
+                        <h2 class="fw-bold">
+                            Get charts and actual <span class="border_line position-relative">values</span> of your
+                            <span class="border_line2 position-relative">hormones</span>
+                        </h2>
+                        <p class="fw-medium">
+                            Actual numerical values are necessary to know whether your PdG levels are sufficient enough
+                            to support a healthy pregnancy.
+                        </p>
+                        <p class="fw-medium mb-0">
+                            Studies show that PdG levels lower than 7.9ng/ml in serum (around 10ug/ml PdG) 6-8 days
+                            after ovulation are associated with lower pregnancy outcomes.
+                        </p>
+                        <div class="try_inito_sec">
+                            <a href="javascript:void(0);" class=" fw-semibold d-flex align-items-center"> <button
+                                    class="btn mx-auto rounded-pill fw-bold try_inito d-flex align-items-center justify-content-center">Get
+                                    get the inito kit
+                                </button></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="img_sec">
+                            <img src="./images/charts/chart_1.png" alt="map" class="w-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- smarter end -->
+
+    <!-- fingertips -->
+    <section class="fingertips_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 px-0">
+                    <div class="fingertips_write">
+                        <h2 class="fw-bold">
+                            A <span class="border_line position-relative">fertility lab</span> at
+                            your fingertips
+                        </h2>
+                        <p class="fw-medium">
+                            Easy-to-read fertility diagnostic results directly on your iPhone¹, in just 10 minutes.
+                        </p>
+                        <div class="try_inito_sec">
+                            <a href="javascript:void(0);" class=" fw-semibold"> <button class="btn rounded-pill fw-semibold try_inito">Get
+                                    the Inito Kit</button></a>
+                        </div>
+                        <p class="monitor">
+                            * The Inito Fertility Monitor currently supports iPhone 7 and up. Android phones are not
+                            supported at the moment.
+                        </p>
+                        <img src="./images/fingertips/apple.png" alt="apple" class="aplleImg w-100 d-block ms-auto">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 px-0">
+                    <div class="fingertips_img_sec">
+                        <div class="row">
+                            <div class="col-md-6 px-0">
+                                <div class="lab_section">
+                                    <img src="./images/fingertips/img1.png" alt="test strip" class="w-100">
+                                    <div class="round_sec">
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="number_sec d-flex align-items-center justify-content-center fw-bold">
+                                                1
+                                            </div>
+                                            <p class="fw-medium mb-0">
+                                                Dip the test strip in urine for 15 seconds.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <div class="lab_section">
+                                    <img src="./images/fingertips/img2.png" alt="test strip" class="w-100">
+                                    <div class="round_sec">
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="number_sec d-flex align-items-center justify-content-center fw-bold">
+                                                2
+                                            </div>
+                                            <p class="fw-medium mb-0">
+                                                Attach the Inito Fertility Monitor to your iPhone*.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 px-0">
+                                <div class="lab_section">
+                                    <img src="./images/fingertips/img3.png" alt="test strip" class="w-100">
+                                    <div class="round_sec">
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="number_sec d-flex align-items-center justify-content-center fw-bold">
+                                                3
+                                            </div>
+                                            <p class="fw-medium mb-0">
+                                                Insert the test strip into the Inito Fertility Monitor.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 px-0">
+                                <div class="lab_section">
+                                    <img src="./images/fingertips/img4.png" alt="test strip" class="w-100">
+                                    <div class="round_sec">
+                                        <div class="d-flex align-items-center">
+                                            <div
+                                                class="number_sec d-flex align-items-center justify-content-center fw-bold">
+                                                4
+                                            </div>
+                                            <p class="fw-medium mb-0">
+                                                Get personalized results on our App in 10 minutes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fingertips end -->
+
+    <!-- reviews -->
+
+    <section class="reviews_sec">
+        <div class="container">
+            <div class="review_slider">
+                <div class="slide_review">
+                    <div class="review_slider_sec position-relative">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                        </div>
+                        <p class="favourite fw-medium">
+                            This is my favorite fertility monitor I’ve tried so far. I was cautious about ordering since
+                            there’s very little info or reviews around the internet, but it seems to be a very well made
+                            and
+                            reliable device. It’s totally fascinating to see my hormone levels on the chart! My LH
+                            levels
+                            don’t cooperate with standard ovulation strips (I never get a positive with standard
+                            strips), so
+                            it’s nice to see all the different hormones mapped out together.
+                        </p>
+
+                    </div>
+                    <p class="sunny fw-semibold mb-0">
+                        Sunny
+                    </p>
+                </div>
+                <div class="slide_review">
+                    <div class="review_slider_sec position-relative">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                        </div>
+                        <p class="favourite fw-medium">
+                            This is my favorite fertility monitor I’ve tried so far. I was cautious about ordering since
+                            there’s very little info or reviews around the internet, but it seems to be a very well made
+                            and
+                            reliable device. It’s totally fascinating to see my hormone levels on the chart! My LH
+                            levels
+                            don’t cooperate with standard ovulation strips (I never get a positive with standard
+                            strips), so
+                            it’s nice to see all the different hormones mapped out together.
+                        </p>
+
+                    </div>
+                    <p class="sunny fw-semibold mb-0">
+                        Sunny
+                    </p>
+                </div>
+                <div class="slide_review">
+                    <div class="review_slider_sec position-relative">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                        </div>
+                        <p class="favourite fw-medium">
+                            This is my favorite fertility monitor I’ve tried so far. I was cautious about ordering since
+                            there’s very little info or reviews around the internet, but it seems to be a very well made
+                            and
+                            reliable device. It’s totally fascinating to see my hormone levels on the chart! My LH
+                            levels
+                            don’t cooperate with standard ovulation strips (I never get a positive with standard
+                            strips), so
+                            it’s nice to see all the different hormones mapped out together.
+                        </p>
+
+                    </div>
+                    <p class="sunny fw-semibold mb-0">
+                        Sunny
+                    </p>
+                </div>
+                <div class="slide_review">
+                    <div class="review_slider_sec position-relative">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                            <img src="./images/review/star.png" alt="star" class="w-100 object-fit-contain star_img">
+                        </div>
+                        <p class="favourite fw-medium">
+                            This is my favorite fertility monitor I’ve tried so far. I was cautious about ordering since
+                            there’s very little info or reviews around the internet, but it seems to be a very well made
+                            and
+                            reliable device. It’s totally fascinating to see my hormone levels on the chart! My LH
+                            levels
+                            don’t cooperate with standard ovulation strips (I never get a positive with standard
+                            strips), so
+                            it’s nice to see all the different hormones mapped out together.
+                        </p>
+
+                    </div>
+                    <p class="sunny fw-semibold mb-0">
+                        Sunny
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- reviews end -->
+
+    <!-- accordian -->
+    <section class="accordion_sec">
+        <div class="container">
+            <h2 class="fw-bold text-center mx-auto title_sec">Your top <span
+                    class="round position-relative">questions</span>,
+                answered</h2>
+            <div class=" acc ">
+                <div class="accordion row justify-content-between" id="accordionExample">
+                    <div class="col-6 pe-4">
+                        <div class="accordian_bg">
+                            <h2 class="accordion-header d-flex justify-content-between position-relative"
+                                id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    What results does Inito give?
+                                </button>
+                                <span class="acordian_plus_minus position-relative"></span>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body pb-0">
+                                    <p class="fw-medium mb-0">
+                                        Inito gives results as: High Fertility, Peak Fertility or
+                                        Ovulation Confirmed. Inito also shows you the charts and actual values of all 3
+                                        hormones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian_bg">
+                            <h2 class="accordion-header d-flex justify-content-between position-relative"
+                                id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#two" aria-expanded="true"
+                                    aria-controls="two">
+                                    How many test strips are required per cycle?
+                                </button>
+                                <span class="acordian_plus_minus position-relative"></span>
+                            </h2>
+                            <div id="two" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body pb-0">
+                                    <p class="fw-medium mb-0">
+                                        Inito gives results as: High Fertility, Peak Fertility or
+                                        Ovulation Confirmed. Inito also shows you the charts and actual values of all 3
+                                        hormones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian_bg">
+                            <h2 class="accordion-header d-flex justify-content-between position-relative"
+                                id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#three" aria-expanded="true"
+                                    aria-controls="three">
+                                    Where can I buy more refill strips? Do I need to buy a new monitor every cycle?
+                                </button>
+                                <span class="acordian_plus_minus position-relative"></span>
+                            </h2>
+                            <div id="three" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body pb-0">
+                                    <p class="fw-medium mb-0">
+                                        Inito gives results as: High Fertility, Peak Fertility or
+                                        Ovulation Confirmed. Inito also shows you the charts and actual values of all 3
+                                        hormones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian_bg">
+                            <h2 class="accordion-header d-flex justify-content-between position-relative"
+                                id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#four" aria-expanded="true"
+                                    aria-controls="four">
+                                    Do I need to use a test strip for each hormone?
+                                </button>
+                                <span class="acordian_plus_minus position-relative"></span>
+                            </h2>
+                            <div id="four" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body pb-0">
+                                    <p class="fw-medium mb-0">
+                                        Inito gives results as: High Fertility, Peak Fertility or
+                                        Ovulation Confirmed. Inito also shows you the charts and actual values of all 3
+                                        hormones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 ps-4">
+                        <div class="accordian_bg">
+                            <h2 class="accordion-header d-flex justify-content-between position-relative"
+                                id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#five" aria-expanded="true"
+                                    aria-controls="five">
+                                    Will Inito work if I have PCOS?
+                                </button>
+                                <span class="acordian_plus_minus position-relative"></span>
+                            </h2>
+                            <div id="five" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body pb-0">
+                                    <p class="fw-medium mb-0">
+                                        Inito gives results as: High Fertility, Peak Fertility or
+                                        Ovulation Confirmed. Inito also shows you the charts and actual values of all 3
+                                        hormones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordian_bg">
+                            <h2 class="accordion-header d-flex justify-content-between position-relative"
+                                id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#six" aria-expanded="true"
+                                    aria-controls="six">
+                                    Do medications affect results?
+                                </button>
+                                <span class="acordian_plus_minus position-relative"></span>
+                            </h2>
+                            <div id="six" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body pb-0">
+                                    <p class="fw-medium mb-0">
+                                        Inito gives results as: High Fertility, Peak Fertility or
+                                        Ovulation Confirmed. Inito also shows you the charts and actual values of all 3
+                                        hormones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordian_bg">
+                            <h2 class="accordion-header d-flex justify-content-between position-relative"
+                                id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#seven" aria-expanded="true"
+                                    aria-controls="seven">
+                                    How accurate is Inito?
+                                </button>
+                                <span class="acordian_plus_minus position-relative"></span>
+                            </h2>
+                            <div id="seven" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body pb-0">
+                                    <p class="fw-medium mb-0">
+                                        Inito gives results as: High Fertility, Peak Fertility or
+                                        Ovulation Confirmed. Inito also shows you the charts and actual values of all 3
+                                        hormones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordian_bg">
+                            <h2 class="accordion-header d-flex justify-content-between position-relative"
+                                id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#eight" aria-expanded="true"
+                                    aria-controls="eight">
+                                    Is Inito FDA Registered and can HSA benefits be used to purchase it?
+                                </button>
+                                <span class="acordian_plus_minus position-relative"></span>
+                            </h2>
+                            <div id="eight" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body pb-0">
+                                    <p class="fw-medium mb-0">
+                                        Inito gives results as: High Fertility, Peak Fertility or
+                                        Ovulation Confirmed. Inito also shows you the charts and actual values of all 3
+                                        hormones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- accordian end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 menu_1 " onclick="menuOpenClose(this)">
+                    <h2 class="fw-semibold">company</h2>
+                    <ul class="ms-0 ps-0 mb-0">
+                        <li>
+                            <a href="javascript:void(0);"> About Us</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"> Careers</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"> Blog</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 menu_2" onclick="menuOpenClose(this)">
+                    <h2 class="fw-semibold">Support</h2>
+                    <ul class="ms-0 ps-0 mb-0">
+                        <li>
+                            <a href="javascript:void(0);"> FAQ</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"> Terms</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"> Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"> Returns & Warranty</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 menu_3" onclick="menuOpenClose(this)">
+                    <h2 class="fw-semibold">Get In Touch</h2>
+                    <ul class="ms-0 ps-0 mb-0">
+                        <li>
+                            <a href="tel:+18153690989" > +1 815-369-0989</a>
+                        </li>
+                        <li>
+                            <a href="mailto:help@inito.com"> help@inito.com</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"> Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"> 355 Bryant Street, Suite 403, San Francisco 94017
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 menu_4" onclick="menuOpenClose(this)">
+                    <div class="d-flex flex-wrap">
+                        <img src="./images/footer/Facebook.png" alt="Facebook" class="social_icon">
+                        <img src="./images/footer/Instagram.png" alt="Instagram" class="social_icon">
+                        <img src="./images/footer/LinkedIn.png" alt="LinkedIn" class="social_icon">
+                        <img src="./images/footer/YouTube.png" alt="YouTube" class="social_icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_line">
+              <div class="container">
+                <div class="d-flex justify-content-between align-items-center logo_line">
+                    <img src="./images/footer/footer_logo.png" alt="footer-logo" class="object-fit-contain">
+                    <p class="fw-medium mb-0 line_1">Copyright 2023, Inito Inc.</p>
+                    <p class="fw-medium mb-0 line_2 text-center">Copyright 2019. Samplytics Technologies Private Limited. All Rights Reserved.</p>
+                </div>
+              </div>  
+        </div>
+    </footer>
+    <!-- footer end-->
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>
